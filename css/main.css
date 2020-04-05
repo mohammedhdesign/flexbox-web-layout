@@ -96,40 +96,58 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
   height: 100%;
   width: 100%;
 }
-
 body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 0 2em;
   font-size: 1.25em;
-  height: 100%;
+  /* height: fit-content; */
+  background-color: #f16059;
   color: #fff;
-}
+    }
 
-header,
-footer {
-  background-color: #222;
+  .flex-container {
+      /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center, and set flex-flow to row wrap*/
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: wrap;
+
+    }
+/*--------------- Header Style ----------*/
+
+header {
+  font-size: 3em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
   height: 80px;
   width: 100%;
 }
 
-main {
-  background-color: #ccc;
-  height: 250px;
-  width: 100%;
-}
 
-header,
-footer,
+/*--------------- Main Section Style ----------*/
+
 main {
   /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+
+main {
+  height: 250px;
+  width: 100%;
+  font-size: 1.5em;
+    }
+
+
+/*--------------- 3 column Grid Style ----------*/
+
 
 #div-1,
 #div-2,
@@ -139,37 +157,42 @@ main {
   align-items: center;
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.25em;
-}
 
-.wrapper span {
-  font-family: 'Lora', sans-serif;
-  font-size: 1.3em;
-}
+  }
 
-.flex-container {
-  /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center, and set flex-flow to row wrap*/
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: wrap;
-
+#div-1, #div-2 {
+  border-right: 1px solid #fff;
 }
 
 .flex-items {
   /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  font-size: 1em;
   width: 30%;
-  height: 200px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 10px;
 
 }
 
+
+/*--------------- Footer Style ----------*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+
+}
+
+.linkedin-icon, .git-icon, .instagram-icon {
+  display: flex;
+  margin-left: 50px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
